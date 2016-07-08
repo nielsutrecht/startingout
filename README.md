@@ -4,17 +4,21 @@
 
 So what's this? Well; it's an open source story. Or it will be, if you want! 
 
-The goal of this repository is to teach beginners a propr Git workflow. Unfortunately most schools still barely touch on the subject and even many professional devs don't know how to do this.
+The goal of this repository is to teach beginners a propr Git workflow. Unfortunately most schools still barely touch on the subject and even many professional devs don't know how to do this. Learning how to work on your own branch, merging in changes from other branches and submitting Pull Requests to get your changes merged into the main branch is a must for any developer. 
 
 ## Who are you?
 
-We are [/u/desrtfx](https://www.reddit.com/user/desrtfx) and [/u/nutrecht](https://www.reddit.com/user/nutrecht/) from the [/r/javahelp](https://www.reddit.com/r/javahelp/) and [/r/learnprogramming](https://www.reddit.com/r/learnprogramming/) subreddits. Together we have over 30 years of experience as developers, desrtfx as an embedded developer and nutrecht as a java backend dev. 
+We are Georg Metzler ([/u/desrtfx](https://www.reddit.com/user/desrtfx)) and Niels Dommerholt ([/u/nutrecht](https://www.reddit.com/user/nutrecht/)) from the [/r/javahelp](https://www.reddit.com/r/javahelp/) and [/r/learnprogramming](https://www.reddit.com/r/learnprogramming/) subreddits. Together we have over 30 years of experience as developers, Georg as an embedded developer and Niels as a java backend dev. 
+
+## How can I join?
+
+In general open source projects you can join should have a ‘[CONTRIBUTING](CONTRIBUTING.md)’ file in the repository that describes how you can help. This one is no exception so [check it out](CONTRIBUTING.md)!
 
 ## FAQ
 
 ### Do I need to understand Git?
 
-A: Yes. There is a link below for a great tutorial. Check that out first. The worflow we are going to teach you however doesn't use too many complex git commands. The most complex part are the merges which sound scary at first but are in fact someting you will get comfortable with in a short while. 
+A: Yes. There is a link below for a great tutorial. Check that out first. The workflow we are going to teach you however doesn't use too many complex git commands. The most complex part are the merges which sound scary at first but are in fact someting you will get comfortable with in a short while. 
 
 So the goal isn't so much to teach you the git basics as it is to actually put them in practice in a way that teaches you how to use git in a professional setting.
 
