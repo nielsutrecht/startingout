@@ -45,6 +45,25 @@ This will create a clone of the repository under the startingout/ subdirectory.
 
 If you have SSH enabled you can also use the more convenient SSH url instead. For info on how to do this [check here](https://help.github.com/articles/generating-an-ssh-key/).
 
+### Configure the original as your upstream repository
+
+You have forked and clone the repository but git now only knows of your own remote (on github) repository, not the one you forked from. Since others will be adding changes to that repository and your yours, and you need to incorporate these changes, you need to also tell git too add another remote:
+
+```
+git remote add upstream https://github.com/gitforgits/startingout.git
+```
+
+If we now list the remotes with “git remote -v” you should see something like this:
+
+```
+origin	git@github.com:<yourusername>/startingout.git (fetch)
+origin	git@github.com:<yourusername>/startingout.git (push)
+upstream	https://github.com/gitforgits/startingout.git (fetch)
+upstream	https://github.com/gitforgits/startingout.git (push)
+```
+
+So to summarise: you have your local repository on your disk and you now have two remotes. Origin is the one in your github account and upstream is the original gitforgits repository.
+
 ### Switch to the develop branch
 
 Let’s see what branches we have. Type this:
@@ -60,4 +79,36 @@ By default git will be on the master branch. Since we base our work on the devel
 ```
    git checkout develop
 ```
-If you now 
+Your develop branch might not be up to date with the upstream develop branch so we will pull that develop branch into our own:
+
+```
+git pull upstream develop
+```
+
+If there were changes you’d see something like this:
+```
+Updating 34e91da..16c56ad
+Fast-forward
+ README.md                 |    5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+```
+
+If you have just cloned the repository there is very little change you will have changes and you will get a “Already up-to-date.” message. 
+
+If you get a warning that there was a merge conflict when merging upstream develop into your local develop this means that you made direct changes to your develop branch. So either you committed these changes locally or you accidentally merged a branch into your develop branch. Don’t do this! We’ll go into how to fix issues later.
+
+### Making our first change
+
+So lets start with something simple. Let’s make a small introduction in the /scratch folder named hello-<yourusername>.md where you can tell something about yourself.
+
+You can use any text editor of your choice. Create a file and add some text to it.
+
+### Adding and committing your work
+
+### Creating a pull request
+
+### So now what?
+
+## Common problems
+
+### Merge conflicts
