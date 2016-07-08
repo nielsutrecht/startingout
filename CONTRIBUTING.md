@@ -86,6 +86,7 @@ git pull upstream develop
 ```
 
 If there were changes you’d see something like this:
+
 ```
 Updating 34e91da..16c56ad
 Fast-forward
@@ -201,9 +202,13 @@ Next time you type “git push” **on a known branch** it will just send over t
 
 ### Creating a pull request
 
-We now have our changes on github and we can click through our commits and see the changes. Now we can create a pull request to our upstream. This is done online on the github page. If you go to your repository (github.com/<youruser>/startingout) you should see a big green “Compare & pull request” button. Click it!
+We now have our changes on github and we can click through our commits and see the changes. Now we can create a pull request to our upstream. This is done online on the github page. If you go to your repository (github.com/<youruser>/startingout) you should see a recent change to a branch a big green “Compare & pull request” button. Click it!
 
-You will get a screen showing the 
+You will get a screen showing the creation options for the pull request.
+
+You can create a PR on your own repository too but we want to get our changes into the upstream. So we should make sure that on the left hand side you have “base fork: gitforgits/startingout” selected together with the **develop** branch (**not master!**). The right hand side should have the “head fork: <your repo>” and the branch you just created selected.
+
+Underneath you see the title of pull request together with some comments. Add a clear descriptive title there and a comment explaining what you did. Just to get you into the habit; a PR won’t be accepted without a clear description of the what and why of the change.
 
 ### So now what?
 
