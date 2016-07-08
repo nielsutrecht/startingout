@@ -8,7 +8,7 @@ The goal of this repository is to teach beginners a propr Git workflow. Unfortun
 
 ## Who are you?
 
-We are [/u/desrtfx](https://www.reddit.com/user/desrtfx) and [/u/nutrecht](https://www.reddit.com/user/nutrecht/) from the [/r/javahelp](https://www.reddit.com/r/javahelp/) and ]/r/learnprogramming](https://www.reddit.com/r/learnprogramming/) subreddits. Together we have over 30 years of experience as developers, desrtfx as an embedded developer and nutrecht as a java backend dev. 
+We are [/u/desrtfx](https://www.reddit.com/user/desrtfx) and [/u/nutrecht](https://www.reddit.com/user/nutrecht/) from the [/r/javahelp](https://www.reddit.com/r/javahelp/) and [/r/learnprogramming](https://www.reddit.com/r/learnprogramming/) subreddits. Together we have over 30 years of experience as developers, desrtfx as an embedded developer and nutrecht as a java backend dev. 
 
 ## FAQ
 
@@ -27,7 +27,7 @@ A: You can but I would advice against it. The biggest benefit of learning Git on
 ## Further reading
 
 * Git
-** [Udacity: How to Use Git and GitHub](https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/m-2960778924)
+ * [Udacity: How to Use Git and GitHub](https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/m-2960778924)
 * Writing
-** [4 Techniques to Fire Up Your Fiction](http://www.writersdigest.com/writing-articles/by-writing-goal/beat-writers-block/4-techniques-to-fire-up-your-fiction)
-** [20 Writing Tips from Fiction Authors](http://www.iuniverse.com/expertadvice/20writingtipsfrom12fictionauthors.aspx)
+ * [4 Techniques to Fire Up Your Fiction](http://www.writersdigest.com/writing-articles/by-writing-goal/beat-writers-block/4-techniques-to-fire-up-your-fiction)
+ * [20 Writing Tips from Fiction Authors](http://www.iuniverse.com/expertadvice/20writingtipsfrom12fictionauthors.aspx)
