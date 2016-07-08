@@ -178,13 +178,40 @@ git commit -am “My first commit”
 
 So our commits now only exist locally. They don’t exist on our own remote nor on the upstream. First we should push them to our own remote with “git push”. It won’t work the first time though; you get a message like this:
 
+```
+fatal: The current branch my-first-change has no upstream branch.
+To push the current branch and set the remote as upstream, use
 
+    git push --set-upstream origin my-first-change
+```
 
+This is because your own remote (origin) doesn’t know the branch yet. So the easiest way is to just copy-paste the suggestion:
 
+```
+git push --set-upstream origin my-first-change
+```
+
+You will get a few lines reporting objects being sent ending with this:
+
+```
+Branch my-first-change set up to track remote branch my-first-change from origin.
+```
+
+Next time you type “git push” **on a known branch** it will just send over the changes.
 
 ### Creating a pull request
 
+We now have our changes on github and we can click through our commits and see the changes. Now we can create a pull request to our upstream. This is done online on the github page. If you go to your repository (github.com/<youruser>/startingout) you should see a big green “Compare & pull request” button. Click it!
+
+You will get a screen showing the 
+
 ### So now what?
+
+Now you wait :)
+
+A pull requests gets reviewed by the maintainer. A pull (or merge) request is basically a review request. The maintainer can comment on it and ask you to make changes. When the maintainer of the repository is happy he will accept the pull request which will merge it into the develop branch.
+
+We will pretty much always ask you to make changes on the pull requests (even if they don’t make sense) because it is important to practice this.  
 
 ## Common problems
 
