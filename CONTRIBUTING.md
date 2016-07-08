@@ -97,13 +97,90 @@ If you have just cloned the repository there is very little change you will have
 
 If you get a warning that there was a merge conflict when merging upstream develop into your local develop this means that you made direct changes to your develop branch. So either you committed these changes locally or you accidentally merged a branch into your develop branch. Don’t do this! We’ll go into how to fix issues later.
 
+### Create a working branch
+
+So we want to learn how to use so called feature branches. A normal flow would be to do your work on your own branch. This way you can commit and push anything you want without impacting the work of others. Only when your own feature branch gets merged into develop do the other devs ‘see’ your changes.
+
+A branch can have pretty much any name. It is common to agree on a naming scheme with the other developers. We’ll use a free form format that describes what you have been working on but keep in mind that every OS project has it’s own rules. For example it is very common to use the issue number in the branch name.
+
+Let’s create a branch named my-first-change now:
+
+```
+git checkout -b my-first-change
+```
+
+This creates and checks out a new branch at the same time. Keep in mind that this branch is created from the state of your current branch. So typically if a feature is not related to one you have in development you should always do this from the develop branch.
+
+If we now type “git branch” we should see something like this:
+
+```
+* my-first-change
+  develop
+  master
+```
+
+Nice! 
+
 ### Making our first change
 
 So lets start with something simple. Let’s make a small introduction in the /scratch folder named hello-<yourusername>.md where you can tell something about yourself.
 
-You can use any text editor of your choice. Create a file and add some text to it.
+You can use any text editor of your choice. Create a file and add some text to it. When you’re done type “git status” in your command line. You should see something lik this:
 
-### Adding and committing your work
+```
+On branch my-first-change
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	scratch/hello-username.md
+```
+
+As you can see git detected our changes correctly. 
+
+### Adding your work
+
+Unlike many older version control systems git separates a working set with your committed work. Your working set is your ‘bucket’ of work you want to commit. So first we add our file:
+
+```
+git add scratch/hello-username.md
+```
+
+It’s important to get this bit right. Check with git status again:
+```
+On branch my-first-change
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   scratch/hello-username.md
+```
+
+As you can see you just added on new file with can be committed. If there’s other files there make sure to remove them (using git reset). git add takes wildcards so it’s easy to just add the changes to the entire tree in one go. But this also makes it easy to add stuff you don’t want. And once changes are added and committed they can never be really removed again. No big deal with normal text but you don’t want to have for example your password in a public git repository. 
+
+### Committing your work
+
+Now we have added our new file we can commit our changes. Just type “git commit”.
+
+Depending on your OS this will open a text editor. On MacOS / Linux this will be vi by default. You can configure this to a different editor if you want.
+
+You can also just supply the commit message on the command line:
+
+```
+git commit -m “My first commit!”
+```
+
+And you can even add and commit with a message at the same time:
+
+```
+git commit -am “My first commit”
+```
+
+### Pushing your work to your repository
+
+So our commits now only exist locally. They don’t exist on our own remote nor on the upstream. First we should push them to our own remote with “git push”. It won’t work the first time though; you get a message like this:
+
+
+
+
 
 ### Creating a pull request
 
